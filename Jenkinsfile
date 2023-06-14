@@ -12,7 +12,8 @@ pipeline {
         stage('Build') {
             steps {
                 // Run other build steps or commands
-                sh 'git status'
+                git status
+                git --version
                 sh 'git commit -m "Commit message"'
                 sh 'git push origin main'
             }
