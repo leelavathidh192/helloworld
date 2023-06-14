@@ -13,7 +13,6 @@ pipeline {
             steps {
                 // Run other build steps or commands
                 git status
-                git --version
                 sh 'git commit -m "Commit message"'
                 sh 'git push origin main'
             }
